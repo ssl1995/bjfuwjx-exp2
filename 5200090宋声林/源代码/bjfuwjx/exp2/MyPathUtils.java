@@ -7,10 +7,10 @@ package bjfuwjx.exp2;
  */
 public class MyPathUtils {
 
-    public static final String KEYWORDS_RELATIVE_PATH = "/src/main/java/bkfuwxjx/epx2/question/Keywords.txt";
+    public static final String KEYWORDS_RELATIVE_PATH = "/5200090宋声林/源代码/bjfuwjx/exp2/question/Keywords.txt";
 
-    public static final String SOURCE_TEXT_RELATIVE_PATH = "/src/main/java/bkfuwxjx/epx2/question/SourceText.xls";
+    public static final String SOURCE_TEXT_RELATIVE_PATH = "/5200090宋声林/源代码/bjfuwjx/exp2/question/SourceText.xls";
 
-    public static final String RESULT_TEXT_RELATIVE_PATH = "/src/main/java/bkfuwxjx/epx2/Result.xls";
+    public static final String RESULT_TEXT_RELATIVE_PATH = "/5200090宋声林/源代码/bjfuwjx/exp2/Result.xls";
 
 }
