@@ -78,7 +78,8 @@ public class TermFrequency {
         });
 
         // 根据股票代码升序排序
-        List<ResultPojo> sortedResult = resultList.stream().sorted(Comparator.comparing(pojo -> Integer.valueOf(pojo.getCode()))).collect(Collectors.toList());
+        List<ResultPojo> sortedResult = resultList.stream()
+                .sorted(Comparator.comparing(pojo -> Integer.valueOf(pojo.getCode()))).collect(Collectors.toList());
 
         MyExcelUtils.writeResultXml(sortedResult);
 
