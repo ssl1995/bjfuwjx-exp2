@@ -23,7 +23,7 @@ public class StockListener extends AnalysisEventListener<Stock> {
 
     @Override
     public void doAfterAllAnalysed(AnalysisContext analysisContext) {
-        System.out.println("解析完成,数据总数:" + stockList.size());
+//        System.out.println("解析完成,数据总数:" + stockList.size());
     }
 
     public List<Stock> getStockList() {
