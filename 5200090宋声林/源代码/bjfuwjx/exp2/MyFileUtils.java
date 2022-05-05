@@ -11,7 +11,7 @@ import java.util.*;
 /**
  * @author SongShengLin
  * @date 2022/5/4 18:46
- * @description
+ * @description 文件工具类
  */
 public class MyFileUtils {
 
@@ -50,9 +50,17 @@ public class MyFileUtils {
             }
 
             String keywords = sb.toString();
+            String[] split;
 
-            // 原文件的换行格式
-            String[] split = keywords.split("\r\n");
+            // 取消换行
+            if (keywords.contains("\r\n")) {
+                split = keywords.split("\r\n");
+            } else if (keywords.contains("\r")) {
+                split = keywords.split("\r");
+            } else {
+                split = keywords.split("\n");
+            }
+
             res.addAll(Arrays.asList(split));
 
             fileInputStream.close();

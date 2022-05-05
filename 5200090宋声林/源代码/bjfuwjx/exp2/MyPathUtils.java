@@ -3,7 +3,7 @@ package bjfuwjx.exp2;
 /**
  * @author SongShengLin
  * @date 2022/5/4 21:56
- * @description
+ * @description 资源相对路径
  */
 public class MyPathUtils {
 

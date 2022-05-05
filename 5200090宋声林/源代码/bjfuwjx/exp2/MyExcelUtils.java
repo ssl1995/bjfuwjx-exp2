@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * @author SongShengLin
  * @date 2022/5/4 21:50
- * @description
+ * @description Excel处理工具
  */
 public class MyExcelUtils {
 
@@ -31,7 +31,7 @@ public class MyExcelUtils {
 
         path = URLDecoder.decode(path, StandardCharsets.UTF_8);
 
-        EasyExcel.write(path, ResultPojo.class).sheet().doWrite(data);
+        EasyExcel.write(path, ResultPojo.class).sheet("result").doWrite(data);
     }
 
 }
